@@ -1,0 +1,23 @@
+-------------------------------------------------------------------------------
+Test set: AllTests
+-------------------------------------------------------------------------------
+Tests run: 32, Failures: 0, Errors: 3, Skipped: 0, Time elapsed: 0.105 s <<< FAILURE! - in AllTests
+shouldMockAndStubDependencies  Time elapsed: 0.004 s  <<< ERROR!
+org.mockito.exceptions.misusing.UnnecessaryStubbingException: 
+
+Unnecessary stubbings detected.
+Clean & maintainable test code requires zero unnecessary code.
+Following stubbings are unnecessary (click to navigate to relevant line of code):
+  1. -> at com.example.MockitoLabTest.shouldMockAndStubDependencies(MockitoLabTest.java:32)
+Please remove unnecessary stubbings or use 'lenient' strictness. More info: javadoc for UnnecessaryStubbingException class.
+
+com.example.UserControllerMockitoTest  Time elapsed: 0.023 s  <<< ERROR!
+org.springframework.beans.factory.BeanDefinitionStoreException: Failed to read candidate component class: file [C:\CTS\CTS-Java-FSE\Week-1\junit-mockito-and-sl4j\target\test-classes\com\example\AdvancedMockitoLabTest.class]; nested exception is org.springframework.core.NestedIOException: ASM ClassReader failed to parse class file - probably due to a new Java class file version that isn't supported yet: file [C:\CTS\CTS-Java-FSE\Week-1\junit-mockito-and-sl4j\target\test-classes\com\example\AdvancedMockitoLabTest.class]; nested exception is java.lang.IllegalArgumentException: Unsupported class file major version 69
+Caused by: org.springframework.core.NestedIOException: ASM ClassReader failed to parse class file - probably due to a new Java class file version that isn't supported yet: file [C:\CTS\CTS-Java-FSE\Week-1\junit-mockito-and-sl4j\target\test-classes\com\example\AdvancedMockitoLabTest.class]; nested exception is java.lang.IllegalArgumentException: Unsupported class file major version 69
+Caused by: java.lang.IllegalArgumentException: Unsupported class file major version 69
+
+com.example.SpringTestingLabTest  Time elapsed: 0.04 s  <<< ERROR!
+org.springframework.beans.factory.BeanDefinitionStoreException: Failed to read candidate component class: file [C:\CTS\CTS-Java-FSE\Week-1\junit-mockito-and-sl4j\target\test-classes\com\example\AdvancedMockitoLabTest.class]; nested exception is org.springframework.core.NestedIOException: ASM ClassReader failed to parse class file - probably due to a new Java class file version that isn't supported yet: file [C:\CTS\CTS-Java-FSE\Week-1\junit-mockito-and-sl4j\target\test-classes\com\example\AdvancedMockitoLabTest.class]; nested exception is java.lang.IllegalArgumentException: Unsupported class file major version 69
+Caused by: org.springframework.core.NestedIOException: ASM ClassReader failed to parse class file - probably due to a new Java class file version that isn't supported yet: file [C:\CTS\CTS-Java-FSE\Week-1\junit-mockito-and-sl4j\target\test-classes\com\example\AdvancedMockitoLabTest.class]; nested exception is java.lang.IllegalArgumentException: Unsupported class file major version 69
+Caused by: java.lang.IllegalArgumentException: Unsupported class file major version 69
+
