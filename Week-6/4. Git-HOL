@@ -1,0 +1,117 @@
+# =========================
+# STEP 1: Verify Master
+# =========================
+
+git checkout master
+
+git status
+
+
+# =========================
+# STEP 2: Create Branch
+# =========================
+
+git checkout -b GitWork
+
+notepad++ hello.xml
+
+git add hello.xml
+
+git status
+
+
+# =========================
+# STEP 3: Update File
+# =========================
+
+notepad++ hello.xml
+
+git status
+
+
+# =========================
+# STEP 4: Commit Branch Changes
+# =========================
+
+git add hello.xml
+
+git commit -m "Added hello.xml in GitWork"
+
+
+# =========================
+# STEP 5: Switch to Master
+# =========================
+
+git checkout master
+
+
+# =========================
+# STEP 6: Create hello.xml in Master
+# =========================
+
+notepad++ hello.xml
+
+git add hello.xml
+
+git commit -m "Added hello.xml in master"
+
+
+# =========================
+# STEP 7: View Log
+# =========================
+
+git log --oneline --graph --decorate --all
+
+
+# =========================
+# STEP 8: Compare Changes
+# =========================
+
+git diff master GitWork
+
+git difftool master GitWork
+
+
+# =========================
+# STEP 9: Merge Branch
+# =========================
+
+git merge GitWork
+
+
+# =========================
+# STEP 10: Resolve Conflict
+# =========================
+
+git mergetool
+
+git add hello.xml
+
+git commit -m "Resolved merge conflict"
+
+
+# =========================
+# STEP 11: Update .gitignore
+# =========================
+
+notepad++ .gitignore
+
+git add .gitignore
+
+git commit -m "Updated .gitignore"
+
+
+# =========================
+# STEP 12: Branch Operations
+# =========================
+
+git branch
+
+git branch -d GitWork
+
+
+# =========================
+# STEP 13: View Log
+# =========================
+
+git log --oneline --graph --decorate

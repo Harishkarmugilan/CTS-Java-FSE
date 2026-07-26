@@ -1,0 +1,88 @@
+# =========================
+# STEP 1: Git Configuration
+# =========================
+
+git --version
+
+git config --global user.name "Your Name"
+
+git config --global user.email "youremail@example.com"
+
+git config --global --list
+
+
+# =========================
+# STEP 2: Configure Notepad++
+# =========================
+
+notepad++
+
+git config --global -e
+
+git config --global core.editor "notepad++"
+
+git config --global -e
+
+
+# =========================
+# STEP 3: Create Repository
+# =========================
+
+mkdir GitDemo
+
+cd GitDemo
+
+git init
+
+ls -la
+
+
+# 3.1 Create File
+
+notepad++ welcome.txt
+
+ls
+
+cat welcome.txt
+
+
+# 3.2 Check Status
+
+git status
+
+
+# 3.3 Add File
+
+git add welcome.txt
+
+
+# 3.4 Commit Changes
+
+git commit
+
+# OR
+
+git commit -m "Initial commit"
+
+
+# 3.5 Verify Status
+
+git status
+
+
+# =========================
+# STEP 4: Connect Remote Repository
+# =========================
+
+git remote add origin https://gitlab.com/yourusername/GitDemo.git
+
+git remote -v
+
+
+# =========================
+# STEP 5: Pull & Push
+# =========================
+
+git pull origin master
+
+git push -u origin master

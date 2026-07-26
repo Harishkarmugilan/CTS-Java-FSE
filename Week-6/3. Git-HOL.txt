@@ -1,0 +1,61 @@
+# =========================
+# STEP 1: Create Branch
+# =========================
+
+git branch GitNewBranch
+
+git branch -a
+
+git checkout GitNewBranch
+
+
+# =========================
+# STEP 2: Add Files
+# =========================
+
+notepad++ branchfile.txt
+
+git add branchfile.txt
+
+git commit -m "Added branchfile.txt in GitNewBranch"
+
+git status
+
+
+# =========================
+# STEP 3: Switch to Master
+# =========================
+
+git checkout master
+
+
+# =========================
+# STEP 4: Compare Branches
+# =========================
+
+git diff master GitNewBranch
+
+git difftool master GitNewBranch
+
+
+# =========================
+# STEP 5: Merge Branch
+# =========================
+
+git merge GitNewBranch
+
+
+# =========================
+# STEP 6: View Log
+# =========================
+
+git log --oneline --graph --decorate
+
+
+# =========================
+# STEP 7: Delete Branch
+# =========================
+
+git branch -d GitNewBranch
+
+git status

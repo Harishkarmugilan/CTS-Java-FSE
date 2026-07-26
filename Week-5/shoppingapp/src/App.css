@@ -1,0 +1,27 @@
+.mydiv{
+
+    text-align:center;
+
+}
+
+h1{
+
+    color:green;
+
+}
+
+table{
+
+    margin:auto;
+
+    color:mediumseagreen;
+
+}
+
+th,td{
+
+    padding:6px 12px;
+
+    border:1px solid gray;
+
+}

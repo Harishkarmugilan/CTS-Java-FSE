@@ -1,0 +1,37 @@
+# =========================
+# STEP 1: Verify Master
+# =========================
+
+git checkout master
+
+git status
+
+
+# =========================
+# STEP 2: List Branches
+# =========================
+
+git branch
+
+git branch -a
+
+
+# =========================
+# STEP 3: Pull Remote Repository
+# =========================
+
+git pull origin master
+
+
+# =========================
+# STEP 4: Push Changes
+# =========================
+
+git push origin master
+
+
+# =========================
+# STEP 5: Verify Remote Repository
+# =========================
+
+git remote -v

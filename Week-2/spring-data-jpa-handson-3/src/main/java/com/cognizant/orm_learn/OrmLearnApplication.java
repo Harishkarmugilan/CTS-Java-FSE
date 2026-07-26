@@ -59,7 +59,7 @@ public class OrmLearnApplication {
 //		testUpdateCountry("AT","Atlantis");
 //		testDeleteCountry("AT");
 
-//		testSearchCountry("ou");
+		testSearchCountry("ou");
 //		testSearchCountryAsc("ou");
 //		testSearchCountryDesc("ou");
 //		testSearchCountryByAlphabet("z");
@@ -77,11 +77,11 @@ public class OrmLearnApplication {
 //		testUpdateEmployee();
 //		testGetEmployee();
 //		testGetDepartment();
-		testGetAverageSalary();
-		testGetAllEmployeesNative();
-		testGetAllPermanentEmployees();
-// Quiz Test Methods
-		testGetAttempt();
+//		testGetAverageSalary();
+//		testGetAllEmployeesNative();
+//		testGetAllPermanentEmployees();
+//// Quiz Test Methods
+//		testGetAttempt();
 
 
 
